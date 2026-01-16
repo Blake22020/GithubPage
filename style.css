@@ -4,6 +4,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -48,6 +49,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 50px;
+    position: relative;
 }
 
 #main h1{
@@ -56,8 +58,28 @@ main {
 }
 
 #main p{
-    font-size: 64px2;
+    font-size: 64px;
     font-weight: 600;
+}
+
+#main a {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 50px;
+    animation: arrowAnimation 2s ease-in-out infinite;
+}
+
+@keyframes arrowAnimation {
+    0% {
+        bottom: 50px;
+    }
+    50% {
+        bottom: 100px;
+    }
+    100% {
+        bottom: 50px;
+    }
 }
 
 #github {
@@ -93,4 +115,49 @@ main {
     text-align: center;
     box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.05);
     border-radius: 35px;
+    transition: all 0.3s ease-in-out;
+}
+
+#github ul li:hover {
+    box-shadow: 0 0 75px 0 rgba(0, 0, 0, 0.25);
+}
+
+#git {
+    min-height: calc(100dvh - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#git h1 {
+    font-size: 96px;
+}
+
+#git p {
+    font-size: 1.8rem;
+    width: 75%;
+    text-align: center;
+}
+
+#git ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    list-style-type: none; 
+}
+
+#git ul li {
+    font-size: 2.4rem;
+    padding: 15px 40px;
+    background: rgba(0, 0, 0, 0.15);
+    text-align: center;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.05);
+    border-radius: 35px;
+    transition: all 0.3s ease-in-out;
+}
+
+#git ul li:hover {
+    box-shadow: 0 0 75px 0 rgba(0, 0, 0, 0.25);
 }
