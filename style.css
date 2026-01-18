@@ -172,7 +172,7 @@ main {
     justify-content: center;
     width: 100dvw;
     gap: 200px;
-    height: calc(100dvh - 80px);
+    min-height: calc(100dvh - 80px);
 }
 
 #form h1 {
@@ -213,4 +213,49 @@ main {
 
 #form form button:hover {
     background: #222;
+}
+
+#form #userInfo {
+    display: none;
+    width: 80%;
+    padding: 25px;
+    box-sizing: border-box;
+    border-radius: 45px;
+    background: rgba(0, 255, 0, 0.25);
+    border: 10px dashed rgba(0, 255, 0, 0.35);
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 30px;
+}
+
+#form #userInfo img {
+    border-radius: 20px;
+}
+
+#form #userInfo div {
+    display: flex;
+    flex-direction: column;
+}
+
+#form #userInfo h2 {
+    font-size: 2.5rem;
+}
+
+#form #userInfo h3 {
+    font-size: 2rem;
+}
+
+#form #userInfo p {
+    font-size: 1.7rem;
+}
+
+#form #userInfo a {
+    font-size: 1.7rem;
+    color: white;
+    background: black;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 35px;
+    margin-top: 20px;
+    width: fit-content;
 }
