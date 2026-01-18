@@ -63,22 +63,22 @@ main {
 }
 
 #main a {
-    width: 150px;
-    height: 150px;
+    width: 5%;
+    aspect-ratio: 1;
     position: absolute;
-    bottom: 50px;
+    bottom: 20px;
     animation: arrowAnimation 2s ease-in-out infinite;
 }
 
 @keyframes arrowAnimation {
     0% {
-        bottom: 50px;
+        bottom: 20px;
     }
     50% {
-        bottom: 100px;
+        bottom: 50px;
     }
     100% {
-        bottom: 50px;
+        bottom: 20px;
     }
 }
 
@@ -258,4 +258,14 @@ main {
     border-radius: 35px;
     margin-top: 20px;
     width: fit-content;
+}
+
+@media (max-width: 1400px) {
+    #main h1 {
+        font-size: 148px;
+    }
+    
+    #form form {
+        width: 60%;
+    }
 }
