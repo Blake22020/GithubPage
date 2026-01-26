@@ -340,11 +340,23 @@ main {
 }
 
 @media (max-width: 600px) {
+    main {
+        margin-top: 0;
+    }
+
+    #main h1 {
+        font-size: 3.8rem;
+    }
+
     #main p {
         font-size: 1.5rem;
     }
 
     header {
         display: none;
+    }
+
+    #main a{
+        width: 20%;
     }
 } 
