@@ -359,4 +359,21 @@ main {
     #main a{
         width: 20%;
     }
+
+    #github ul li {
+        font-size: 1.3rem;
+        padding: 15px 20px;
+    }
+
+    #git ul li {
+        font-size: 1.3rem;
+        padding: 15px 20px;
+    }
 } 
+
+
+@media (max-width: 500px) {
+    #main p {
+        font-size: 1.2rem;
+    }
+}
